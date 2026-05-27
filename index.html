@@ -46,21 +46,33 @@
 
 <!-- HERO -->
 
-<section class="container text-center my-5">
+<section class="hero container my-5">
 
-<h1>AfriTalent</h1>
+  <div class="row align-items-center">
 
-<p>La plateforme qui connecte les talents africains aux entreprises du monde entier.</p>
+    <!-- TEXTE -->
+    <div class="col-md-6 text-center text-md-start">
 
-<img src="images/hero.jpg" class="img-fluid w-75 mx-auto d-block" alt="Image principale AfriTalent">
+      <h1>AfriTalent</h1>
+      <p>La plateforme qui connecte les talents africains aux entreprises du monde entier.</p>
 
-<div class="mt-3">
-<a href="freelances.html" class="btn btn-dark">Freelances</a>
-<a href="contact.html" class="btn btn-outline-dark">Rejoindre</a>
-</div>
+      <div class="mt-3">
+        <a href="freelances.html" class="btn btn-dark">Freelances</a>
+        <a href="contact.html" class="btn btn-outline-dark">Rejoindre</a>
+      </div>
+
+    </div>
+
+    <!-- IMAGE -->
+    <div class="col-md-6 text-center">
+
+      <img src="images/hero.jpg" class="img-fluid hero-img" alt="AfriTalent">
+
+    </div>
+
+  </div>
 
 </section>
-
 <!-- CATEGORIES -->
 <section class="container my-5">
 
@@ -68,25 +80,25 @@
 
 <div class="row text-center">
 
-<div class="col-md-3">
+<div class="col-md-3 category-card">
 <i class="bi bi-code-slash fs-2"></i>
 <h5>Développement Web</h5>
 <p>Sites web et applications modernes.</p>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 category-card">
 <i class="bi bi-palette fs-2"></i>
 <h5>Design UI/UX</h5>
 <p>Interfaces modernes et intuitives.</p>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 category-card">
 <i class="bi bi-megaphone fs-2"></i>
 <h5>Marketing Digital</h5>
 <p>Visibilité et publicité en ligne.</p>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 category-card">
 <i class="bi bi-bar-chart fs-2"></i>
 <h5>Data & IA</h5>
 <p>Analyse de données et intelligence artificielle.</p>
@@ -101,19 +113,18 @@
 
 <h2 class="text-center mb-4">Comment ça marche</h2>
 
-<div class="row text-center">
-
-<div class="col-md-4">
+<div class="bento-grid">
+<div class="bento-item">
 <h5>Créer un profil</h5>
 <p>Présentez vos compétences.</p>
 </div>
 
-<div class="col-md-4">
+<div class="bento-item">
 <h5>Trouver des missions</h5>
 <p>Accédez à des projets adaptés.</p>
 </div>
 
-<div class="col-md-4">
+<div class="bento-item">
 <h5>Travailler et gagner</h5>
 <p>Collaborez avec des entreprises.</p>
 </div>
@@ -122,14 +133,14 @@
 
 </section>
 
-<!-- TÉMOIGNAGES (CORRIGÉ) -->
+<!-- TÉMOIGNAGES  -->
 <section class="container my-5">
 
 <h2 class="text-center mb-4">Témoignages</h2>
 
 <div class="row text-center">
 
-<div class="col-md-4">
+<div class="col-md-4 testimonial-card">
 
 <i class="bi bi-chat-quote-fill fs-1"></i>
 
@@ -142,8 +153,7 @@
 
 </div>
 
-<div class="col-md-4">
-
+<div class="col-md-4 testimonial-card">
 <i class="bi bi-chat-quote-fill fs-1"></i>
 
 <img src="images/testi2.jpg" class="img-fluid rounded-circle mt-2" width="90" alt="Mamadou Fall">
@@ -155,7 +165,7 @@
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4 testimonial-card">
 
 <i class="bi bi-chat-quote-fill fs-1"></i>
 
@@ -199,7 +209,6 @@
     <a href="https://www.linkedin.com/" target="_blank" class="text-white">LinkedIn</a>
   </div>
 
-</footer>
 </footer>
 
 <!-- Bootstrap JS -->
