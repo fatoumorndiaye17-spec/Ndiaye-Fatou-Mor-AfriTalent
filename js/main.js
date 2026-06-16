@@ -86,3 +86,94 @@ function startCounter(counter) {
 
   update();
 }
+
+// filtres freelances
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".freelance-card");
+
+buttons.forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    // catégorie choisie
+    const filter = btn.getAttribute("data-filter");
+
+    cards.forEach(card => {
+
+      // afficher tout
+      if (filter === "all") {
+        card.style.display = "block";
+      }
+
+      // bon filtre
+      else if (card.getAttribute("data-category") === filter) {
+        card.style.display = "block";
+      }
+
+      // cacher
+      else {
+        card.style.display = "none";
+      }
+
+    });
+
+  });
+
+});
+
+
+// formulaire contact
+const form = document.querySelector("form");
+
+if (form) {
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop reload
+
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    let ok = true;
+
+    // reset erreurs
+    document.querySelectorAll(".error").forEach(e => e.innerText = "");
+
+    // nom
+    if (name.value === "") {
+      setError(name, "obligatoire");
+      ok = false;
+    }
+
+    // email
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email.value === "") {
+      setError(email, "obligatoire");
+      ok = false;
+    } else if (!regex.test(email.value)) {
+      setError(email, "invalide");
+      ok = false;
+    }
+
+    // message
+    if (message.value.length < 20) {
+      setError(message, "20+ caractères");
+      ok = false;
+    }
+
+    // ok
+    if (ok) {
+      alert("OK envoyé");
+      form.reset();
+    }
+
+  });
+
+}
+
+// erreur simple
+function setError(input, msg) {
+  const error = input.parentElement.querySelector(".error");
+  if (error) error.innerText = msg;
+}

@@ -559,3 +559,38 @@ body.dark .border{
   font-weight:bold;
   color:#2563eb;
 }
+
+/* erreurs formulaire */
+.error{
+  color:red;
+  font-size:0.85rem;
+  margin-top:5px;
+}
+
+/* animation simple feedback */
+input, textarea, select{
+  transition:0.3s;
+}
+
+input:focus, textarea:focus, select:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 5px rgba(37,99,235,0.3);
+}
+
+/* cartes freelances transition */
+.freelance-card{
+  transition:0.3s ease;
+}
+
+.freelance-card:hover{
+  transform:translateY(-5px);
+}
+
+/* bouton submit effet */
+button[type="submit"]{
+  transition:0.3s;
+}
+
+button[type="submit"]:hover{
+  transform:scale(1.03);
+}
