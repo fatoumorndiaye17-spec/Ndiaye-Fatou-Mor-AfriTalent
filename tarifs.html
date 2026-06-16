@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,128 +8,246 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- HEADER / NAVBAR -->
+<!-- NAVBAR -->
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
 
-<a class="navbar-brand" href="index.html">AfriTalent</a>
+    <a class="navbar-brand" href="index.html">AfriTalent</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="collapse navbar-collapse" id="menu">
+    <div class="collapse navbar-collapse" id="menu">
 
-<ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
 
-<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-<li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-<li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-</div>
+    </div>
+  </div>
 </nav>
 </header>
 
-<!-- MAIN -->
-<main>
+<main class="container my-5" style="padding-top:80px;">
 
-<section class="container my-5">
+<!-- TITRE -->
+<section class="text-center mb-5">
+  <h1>Nos Tarifs</h1>
+  <p>Choisissez le plan adapté à vos besoins</p>
+</section>
 
-<h1 class="text-center mb-5">Nos Tarifs</h1>
+<!-- PLANS -->
+<section class="row text-center g-4">
 
-<div class="row text-center">
+  <!-- GRATUIT -->
+  <article class="col-md-4">
+    <div class="p-4 border rounded h-100">
 
-<!-- STARTER -->
-<div class="col-md-4">
-<div class="p-4 border rounded">
+      <i class="bi bi-gift fs-1"></i>
+      <h3 class="mt-2">Gratuit</h3>
+      <h4>0 FCFA / mois</h4>
 
-<i class="bi bi-star fs-1"></i>
+      <p>Découvrir la plateforme sans engagement.</p>
 
-<h3>Starter</h3>
-<h4>50 000 FCFA / mois</h4>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle text-success"></i> Profil basique</li>
+        <li><i class="bi bi-check-circle text-success"></i> Accès limité aux missions</li>
+        <li><i class="bi bi-x-circle text-danger"></i> Support prioritaire</li>
+      </ul>
 
-<p>Parfait pour débuter et tester la plateforme AfriTalent.</p>
+      <button class="btn btn-outline-dark w-100">Commencer</button>
+    </div>
+  </article>
 
-<ul class="list-unstyled">
-<li>✔ Accès aux missions basiques</li>
-<li>✔ Profil visible</li>
-<li>✔ Support standard</li>
-</ul>
+  <!-- PRO (IMPORTANT) -->
+  <article class="col-md-4">
+    <div class="p-4 border border-dark rounded shadow position-relative h-100">
 
-<button class="btn btn-outline-dark">Choisir Starter</button>
+      <span class="badge bg-dark position-absolute top-0 start-50 translate-middle">
+        Populaire
+      </span>
 
-</div>
-</div>
+      <i class="bi bi-rocket fs-1"></i>
+      <h3 class="mt-2">Pro</h3>
+      <h4>15 000 FCFA / mois</h4>
 
-<!-- PRO -->
-<div class="col-md-4">
-<div class="p-4 border border-dark rounded">
+      <p>Pour les freelances actifs et professionnels.</p>
 
-<i class="bi bi-rocket fs-1"></i>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle text-success"></i> Accès complet aux missions</li>
+        <li><i class="bi bi-check-circle text-success"></i> Profil mis en avant</li>
+        <li><i class="bi bi-check-circle text-success"></i> Support prioritaire</li>
+      </ul>
 
-<h3>Pro</h3>
-<h4>80 000 FCFA / mois</h4>
+      <button class="btn btn-dark w-100">Choisir Pro</button>
+    </div>
+  </article>
 
-<p>Pour les freelances actifs qui veulent évoluer rapidement.</p>
+  <!-- ENTREPRISE -->
+  <article class="col-md-4">
+    <div class="p-4 border rounded h-100">
 
-<ul class="list-unstyled">
-<li>✔ Accès complet aux missions</li>
-<li>✔ Visibilité améliorée</li>
-<li>✔ Support prioritaire</li>
-</ul>
+      <i class="bi bi-building fs-1"></i>
+      <h3 class="mt-2">Entreprise</h3>
+      <h4>35 000 FCFA / mois</h4>
 
-<button class="btn btn-dark">Choisir Pro</button>
+      <p>Solution complète pour recruter des talents.</p>
 
-</div>
-</div>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle text-success"></i> Accès illimité freelances</li>
+        <li><i class="bi bi-check-circle text-success"></i> Gestion d’équipe</li>
+        <li><i class="bi bi-check-circle text-success"></i> Support dédié 24/7</li>
+      </ul>
 
-<!-- ENTREPRISE -->
-<div class="col-md-4">
-<div class="p-4 border rounded">
-
-<i class="bi bi-building fs-1"></i>
-
-<h3>Entreprise</h3>
-<h4>250 000 FCFA / mois</h4>
-
-<p>Solution complète pour entreprises et grandes équipes.</p>
-
-<ul class="list-unstyled">
-<li>✔ Gestion de plusieurs freelances</li>
-<li>✔ Accès premium global</li>
-<li>✔ Support dédié 24/7</li>
-</ul>
-
-<button class="btn btn-outline-dark">Choisir Entreprise</button>
-
-</div>
-</div>
-
-</div>
+      <button class="btn btn-outline-dark w-100">Contacter</button>
+    </div>
+  </article>
 
 </section>
 
-</main>
+<!-- CTA -->
+<section class="text-center my-5 p-5 bg-light rounded">
+  <h2>Prêt à rejoindre AfriTalent ?</h2>
+  <p>Crée ton compte et commence dès aujourd’hui.</p>
+  <a href="contact.html" class="btn btn-dark">S’inscrire</a>
+</section>
+
+<<section class="container my-5" id="faq">
+
+  <h2 class="text-center mb-4">FAQ</h2>
+
+  <div class="accordion shadow-sm" id="faqAccordion">
+
+    <!-- 1 -->
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+          AfriTalent est-il gratuit ?
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Oui, un plan gratuit est disponible pour permettre à tous de commencer facilement.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+          Puis-je changer de plan ?
+        </button>
+      </h2>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Oui, tu peux changer de plan à tout moment depuis ton espace utilisateur.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+          Les paiements sont-ils sécurisés ?
+        </button>
+      </h2>
+      <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Oui, toutes les transactions sont sécurisées et protégées.
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+          Comment trouver un freelance ?
+        </button>
+      </h2>
+      <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Tu peux utiliser la page Freelances et filtrer selon tes besoins.
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">
+          Comment devenir freelance sur la plateforme ?
+        </button>
+      </h2>
+      <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Clique sur “Rejoindre AfriTalent”, crée ton profil et commence à proposer tes services.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3 mt-5">
-<p>© 2026 AfriTalent - Tous droits réservés</p>
+<footer class="bg-dark text-white pt-5">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <h5>AfriTalent</h5>
+        <p>Plateforme de freelances moderne en Afrique.</p>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Liens</h5>
+        <a href="index.html" class="text-white d-block">Accueil</a>
+        <a href="freelances.html" class="text-white d-block">Freelances</a>
+        <a href="tarifs.html" class="text-white d-block">Tarifs</a>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Contact</h5>
+        <p>Dakar, Sénégal</p>
+        <p>contact@afritalent.com</p>
+        <p>+221 78 537 75 11</p>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Réseaux</h5>
+        <a href="https://facebook.com" class="text-white d-block">Facebook</a>
+        <a href="https://instagram.com" class="text-white d-block">Instagram</a>
+        <a href="https://linkedin.com" class="text-white d-block">LinkedIn</a>
+        <a href="https://twitter.com" class="text-white d-block">Twitter</a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="text-center mb-0">© 2026 AfriTalent</p>
+
+  </div>
+
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
