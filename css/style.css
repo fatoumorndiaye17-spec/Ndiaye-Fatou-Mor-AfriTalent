@@ -482,3 +482,63 @@ footer a:hover{
     text-align: center;
   }
 }
+
+
+body.dark{
+  background:#0f172a;
+  color:#ffffff;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6{
+  color:#ffffff;
+}
+
+body.dark .navbar{
+  background:#000 !important;
+}
+
+/* Cartes en mode sombre */
+body.dark .service-card,
+body.dark .step-card,
+body.dark .freelance-card,
+body.dark .p-4,
+body.dark .border{
+  background:#1e1e1e;
+  color:#ffffff;
+}
+
+
+.navbar.scrolled{
+  background:#000 !important;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+
+
+#topBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  border:none;
+  background:#000;
+  color:#fff;
+  display:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+#topBtn:hover{
+  transform:scale(1.1);
+}
