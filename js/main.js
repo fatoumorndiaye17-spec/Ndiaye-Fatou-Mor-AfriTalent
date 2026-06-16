@@ -45,3 +45,44 @@ topBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+
+      if (entry.target.classList.contains("counter")) {
+        startCounter(entry.target);
+      }
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+document.querySelectorAll(".counter").forEach(counter => {
+  counter.innerText = "0";
+  counter.classList.add("hidden");
+  observer.observe(counter);
+});
+
+function startCounter(counter) {
+  const target = +counter.getAttribute("data-target");
+  let current = 0;
+
+  const step = target / 100;
+
+  const update = () => {
+    current += step;
+    if (current < target) {
+      counter.innerText = Math.ceil(current);
+      requestAnimationFrame(update);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  update();
+}
