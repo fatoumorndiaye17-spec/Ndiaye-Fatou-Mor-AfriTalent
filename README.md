@@ -26,6 +26,10 @@ Permettre aux freelances de trouver des missions et aux entreprises de recruter 
 - Système de navigation simple
 - Interface moderne avec Bootstrap
 
+ ##Lien du sites
+
+  https://fatoumorndiaye17-spec.github.io/Ndiaye-Fatou-Mor-AfriTalent/
+
 ## Auteur
 Fatou Ndiaye
 
