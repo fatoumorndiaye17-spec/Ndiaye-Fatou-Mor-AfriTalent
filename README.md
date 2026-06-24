@@ -31,7 +31,7 @@ Permettre aux freelances de trouver des missions et aux entreprises de recruter 
   https://fatoumorndiaye17-spec.github.io/Ndiaye-Fatou-Mor-AfriTalent/
 
 ## Auteur
-Fatou Ndiaye
+Ndiaye Fatou Mor
 
 ## Année
 2026
